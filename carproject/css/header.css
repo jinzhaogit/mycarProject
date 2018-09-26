@@ -1,0 +1,176 @@
+header{
+	width: 1200px;
+	height: 100%;
+	margin: auto;
+}
+/*头部上面*/
+header div.top{
+	margin-bottom: 25px;
+	margin-top: 5px;
+}
+/*logo图标*/
+div.top>img{
+	width: 165px;
+	margin-left: 120px;
+}
+/*搜索框*/
+div.top div.search{
+	display: inline-block;
+	position: relative;
+}
+div.top div.search input{
+	width: 500px;
+	height: 30px;
+	text-indent: 20px;
+	border: 1px solid #f10180;
+	outline: none;
+	margin: 6px 80px 0 50px;
+	
+}
+/*搜索框按钮*/
+div.top div.search>.search_btn{
+	width: 50px;
+	height: 30px;
+	background: #F10180;
+	position: absolute;
+	top: 7px;
+	right: 80px;
+}
+div.top div.search>.search_btn:after{
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/header/search.png);
+	margin: 6px 15px;
+}
+/*定位与天气*/
+div.top div.gps{
+	display: inline-block;
+}
+div.top div.gps:before{
+	content: '';
+	display: inline-block;
+	width: 48px;
+	height: 13px;
+	background: url(../img/header/gps.png) no-repeat center;
+}
+/*导航栏*/
+div.nav{
+	width: 100%;
+	height: 50px;
+	background: #202020;
+	position: relative;
+	border: 1px solid #F10180;
+}
+/*导航栏左边魔方*/
+div.nav div.wrap{
+	width: 30px;
+	height: 30px;
+	margin: 10px 30px 0 40px;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	transform: rotateX(-20deg) rotateY(-20deg);
+	animation: mycube 5s linear infinite;
+	cursor: pointer;
+}
+@keyframes mycube{
+	from{transform: rotateX(0) rotateY(0);}
+	to{transform: rotateX(360deg) rotateY(360deg);}
+}
+div.wrap div.cube{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+div.wrap div.cube div{
+	width: 100%;
+	height: 100%;
+	background: rgba(241,1,128,0.6);
+	color: #fff;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	box-shadow: 0 0 2px #fff;
+	position: absolute;
+}
+div.cube div:first-child{transform: translateZ(15px);}
+div.cube div:nth-child(2){transform: rotateY(-180deg) translateZ(15px);}
+div.cube div:nth-child(3){transform: rotateY(-90deg) translateZ(15px);}
+div.cube div:nth-child(4){transform: rotateY(90deg) translateZ(15px);}
+div.cube div:nth-child(5){transform: rotateX(-90deg) translateZ(15px);}
+div.cube div:last-child{transform: rotateX(90deg) translateZ(15px);}
+/*导航列表*/
+div.nav ul.nav-list{
+	position: absolute;
+	top: 0;
+	left: 100px;
+}
+div.nav ul.nav-list li{
+	float: left;
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+div.nav ul.nav-list li a{
+	color: #fff;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+/*导航的弹性盒子*/
+#elaset{
+	width: 115px;
+	height: 44px;
+	background: rgba(252,5,129,0.2);
+	position: absolute;
+	left: 0;
+	top: 2px;
+	border: 1px solid #F10180;
+	border-radius: 15px;
+	box-shadow: 0 0 18px #f10180;
+}
+/*导航右侧搜索按钮*/
+div.nav div.nav-search{
+	width: 24px;
+	height: 24px;
+	background: #F10180 url(../img/header/search.png) no-repeat center;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	opacity: 0.7;
+	position: absolute;
+	top: 13px;
+	right: 145px;
+	cursor: pointer;
+}
+div.nav div.nav-search>input{
+	display: none;
+	width: 160px;
+	height: 24px;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #F10180;
+	position: absolute;
+	right: 24px;
+	color: #F10180;
+}
+/*导航右侧注册登录*/
+div.nav div.nav-my{
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	text-align: center;
+	line-height: 50px;
+}
+div.nav div.nav-my a{
+	color: #fff;
+	font-size: 16px;
+}
+/*吸顶盒模式*/
+.fixed{
+	position: fixed !important;
+	top: 0;
+	left: 0;
+}

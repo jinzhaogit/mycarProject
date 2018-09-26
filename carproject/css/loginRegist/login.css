@@ -1,0 +1,90 @@
+body{
+	background-image: url(../../img/loginRegist//regist01.jpg);
+	background-size: cover;
+}
+#login{
+	float: right;
+	width: 410px;
+	height: 100%;
+	box-shadow: 0 0 10px #fff;
+	background-color: rgba(194,207,216,.6);
+	margin-right: 30%;
+	margin-top: 10%;
+}
+/*头部标题*/
+div.regTitle{
+	border-bottom: 1px solid #FFF3F3;
+	padding: 7px 10px;
+}
+.regTitle>h2{
+	display: inline-block;
+	color: #F10180;	
+	margin: 0;
+}
+.regTitle>a{
+	display: inline-block;
+	padding-left: 140px;
+	text-decoration: none;
+	color: #F0F0EE;
+	font-size: 14px;
+}
+/*表单*/
+form{
+	padding-left:5px;
+}
+form input,form input[type=button]{
+	width: 280px;
+	height: 30px;
+	border-radius: 3px;
+	outline: none;
+	border: 0;
+	text-indent: 15px;
+}
+/*提交按钮*/
+form input[type=button]{
+	margin-left: 85px;
+	background: linear-gradient(to bottom,#f10180,#E84D9D);
+	height: 35px;
+	color: #fff;
+	font-size: 18px;
+}
+form input[type=checkbox]{
+	width: 15px;
+	height: 15px;
+	vertical-align: top;
+	margin-left: 85px;
+}
+form label[for=rem]{
+	font-size: 14px;
+}
+form p span{
+	color: #666;
+	font-size: 12px;
+}
+span.showError{
+	color: red;
+}
+span.showSuc{
+	display: inline-block;	
+	width: 23px;
+	height: 23px;
+	vertical-align: top;
+	margin-top: 5px;
+	background-image: url(../../img/loginlogin/ok.png);
+	background-size: 22px auto;
+}
+/*提示框*/
+#msg{
+	display: none;
+	width: 200px;
+	height: 70px;
+	background: rgba(70,73,82,.9);
+	border: 1px solid #fff;
+	position: absolute;
+	top: 33%;
+	right: 40%;
+	z-index: 200;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+}

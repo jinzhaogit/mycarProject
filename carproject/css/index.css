@@ -1,0 +1,899 @@
+#box{
+	width: 1200px;
+	margin: 0 auto;
+	background: #F5F5F5;
+}
+/*轮播图*/
+#banner{
+	width: 100%;
+	height: 375px;
+	position: relative;
+	margin-top: -21px;
+	overflow: hidden;
+}
+/*轮播图片*/
+#banner ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100px;
+}
+#banner ul li{
+	float: left;
+	height: 100%;
+	width: 1200px;
+}
+#banner ul li>img{
+	width: 1200px;
+}
+/*轮播左右按钮*/
+#banner-btn{
+	display: none;
+}
+#banner-btn>img{
+	position: absolute;
+	top: 152px;
+	cursor: pointer;
+}
+#banner-btn>img.prev{
+	left: 10px;
+}
+#banner-btn>img.next{
+	right: 10px;
+}
+/*轮播图焦点列表*/
+#focus{
+	height: 10px;
+	width: 30px;
+	position: absolute;
+	left: 550px;
+	bottom: 5px;
+}
+#focus span{
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	background: #F1F1F1;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+/*10个车标*/
+#carLogo{
+	width: 100%;
+	height: 100px;
+	background: rgba(56,56,56,0.9);
+}
+#carLogo ul{
+	width: 100%;
+	height: 100px;
+	padding-left: 60px;
+}
+#carLogo ul li{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+	transition: all 1s ease;
+}
+#carLogo ul li:hover{
+	transform: rotate(360deg);
+}
+#carLogo ul li>img{
+	width: 100px;
+}
+/*最新动态*/
+#news{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+#news>ul{
+	float: left;
+	padding-right: 30px;
+}
+#news ul li{
+	width: 390px;
+	height: 30px;
+	border-bottom: 1px dotted #FDDFDF;
+	line-height: 30px;
+	color: #333;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+#news ul li>img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px 0 10px;
+}
+#news ul li>div{
+	width: 390px;
+	height: 30px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: -1;
+}
+/*新闻摘要图片*/
+#news div.news-img{
+	float: left;
+	width: 717px;
+}
+#news div.news-img div{
+	float: left;
+	overflow: hidden;
+	margin:3px;
+	position: relative;
+}
+#news div.news-img div>p{
+	width: 100%;
+	height: 110px;
+	background: rgba(237,237,237,0.7);
+	color: #F43838;
+	text-align: center;
+	line-height: 110px;
+	font-size: 18px;
+	position: absolute;
+	bottom: -115px;
+	left: 0;
+	transition: all 1s ease;
+}
+#news div.news-img div:first-child>p{
+	bottom: -110px;
+}
+#news div.news-img div:hover p.p-hover{
+	cursor: pointer;
+	bottom: 0;
+}
+/*资料资讯*/
+#news div.news-inform{
+	float: right;
+	width: 220px;
+	height: 100%;
+	color: #333;
+	margin-top: -240px;
+	margin-right: 10px;
+}
+#news div.news-inform div{
+	border-bottom: 1px solid #D3D6DA;
+}
+#news div.news-inform div:hover{
+	color: red;
+	box-shadow: 0 0 10px #F0AD4E;
+}
+#news div.news-inform i{
+	display: inline-block;
+	width: 36px;
+	height: 39px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 39px;
+	border-right: 1px solid #D3D6DA;
+}
+/*精选推荐*/
+#choice{
+	width: 100%;
+	display: flex;
+}
+#choice div{
+	justify-content: space-around;
+	width: 260px;
+	height: 223px;
+	margin-left: 31px;
+}
+#choice div img{
+	width: 260px;
+	transition: all .4s ease-in;
+}
+#choice div img:hover{
+	transform: scale(1.1);
+	border-radius: 5px;
+	box-shadow: 0 0 5px #F10180;
+}
+#choice div>P{
+	line-height: 22px;
+	color: #666;
+}
+/*豪车云集*/
+#luxury{
+	width: 1000px;
+	height: 427px;
+	margin: 0 auto 15px;
+	display: flex;
+}
+#luxury .img{
+	flex: 1;
+	width: 333px;
+}
+#luxury .img div.lu-hover{
+	width: 330px;
+	overflow: hidden;
+	border: 1px solid #F1A899;
+	position: relative;
+}
+#luxury .img div.lu-hover img{
+	width: 330px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*热门车型*/
+#hot{
+	width: 100%;
+	height: 490px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 10px;
+}
+#hot>.hot-car{
+	width: 100%;
+	height: 650px;
+	margin-top: -180px;
+}
+/*热门车型标题*/
+#hot div.hot-title{
+	width: 158px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	color: #fff;
+	background: rgba(176,176,176,0.7);
+	border-radius: 10px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+/*热门车型下面按钮*/
+#hot div.hot-btn{
+	width: 100%;
+	height: 70px;
+	background: url(../img/index/hot/hot-bottombg.png);
+	position: absolute;
+	bottom: 0;
+	border-radius: 3px;
+}
+#hot div.hot-btn a{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	bottom: 15px;
+}
+#hot div.hot-btn a:first-child{
+	left: 500px;
+	background: url(../img/index/hot/hot-left.png);
+}
+#hot div.hot-btn a:last-child{
+	right: 530px;
+	background: url(../img/index/hot/hot-right.png);
+}
+/*发现好货*/
+#find{
+	width: 100%;
+	height: 275px;
+}
+#find>ul{
+	width: 445px;
+}
+#find>ul li{
+	float: left;
+	width: 200px;
+	height: 75px;
+	background: rgba(176,176,176,0.3);
+	line-height: 75px;
+	text-align: center;
+	margin: 2px 20px 18px 2px;
+	box-shadow: 0 0 1px #F10180;
+	border-radius: 5px;
+	font-size: 16px;
+}
+#find>ul li.find-active{
+	opacity: 0.5;
+}
+/*发现好货详情区*/
+#find>div.find-pro{
+	float: right;
+	width: 200px;
+	border: 1px solid #F2DEDE;
+	height: 260px;
+	margin-top: -180px;
+	margin-right: 10px;
+	color: #666;
+}
+#find>div.find-pro h4{
+	font-size: 16px;
+	line-height: 40px;
+	padding:0 10px;
+}
+#find>div.find-pro h4>i{
+	color: #FF1493;
+}
+#find>div.find-pro h5{
+	line-height: 26px;
+	padding:0 10px;
+}
+/*时尚宝贝*/
+#baby{
+	width: 100%;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+/*手风琴区*/
+#baby div.baby-img{
+	width: 866px;
+	height: 236px;
+	border-bottom: 1px dotted #F2DEDE;
+	overflow: hidden;
+}
+#baby div.baby-img div{
+	float:left;
+	width: 40px;
+	height: 240px;	
+}
+#baby div.baby-img div:first-child{
+	width: 745px;
+}
+#baby div.baby-img div h2{
+	float: left;
+	width: 40px;
+	height: 150px;
+	background: lightskyblue;
+	color: #fff;
+	text-align: center;
+	padding-top: 85px;
+}
+#baby div.baby-img div img{
+	width: 350px;
+	background-size: 350px auto;
+	float: left;
+	background: #fff;
+}
+/*段落区*/
+#baby div.baby-article{
+	float: right;
+	position: relative;
+	width: 240px;
+	height: 320px;
+	margin: -232px 15px 0 5px;
+	border: 1px solid #F1A899;
+	padding: 0 15px;
+	overflow: hidden;
+}
+#baby div.baby-article .baby-main>p{
+	line-height: 24px;
+	color: #333;
+}
+/*滚轮区*/
+#sliderWrap{
+	width:5px;
+	height: 100%;
+	background-color: #CFCFCF;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#slider{
+	width: 5px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 5px;
+	position: absolute;
+	right: 0px;
+	top: 0;
+}
+/*广告区*/
+#baby img.baby-guangg{
+	width: 405px;
+	height: 90px;
+}
+/*即将上市*/
+#list{
+	width: 100%;
+	display: flex;
+	padding: 15px 30px 15px 0;
+	box-sizing: border-box;
+}
+#list div.list-item{
+	flex: 1;
+	width: 200px;
+	height: 350px;
+	border: 1px solid #B7D2FF;
+	margin-left: 30px;
+	position: relative;	
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+/*前面*/
+#list div.list-item .front,#list div.list-item .back{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #F5F5F5;
+	transition: all 1s ease;
+}
+#list div.list-item .front h4{
+	color: #F10180;
+	font-style: initial;
+	text-align: center;
+}
+/*图片*/
+.front-img{
+	display: block;
+	width: 100%;
+	height: 205px;
+	background-position:335px 230px;
+	background-size: auto 270px;
+}
+
+#list div.list-item:nth-child(1) .front .front-img{
+	background-image: url(../img/index/list/list01.png) ;	
+}
+#list div.list-item:nth-child(2) .front .front-img{
+	background-image: url(../img/index/list/list02.png) ;	
+}
+#list div.list-item:nth-child(3) .front .front-img{
+	background-image: url(../img/index/list/list03.png) ;	
+}
+#list div.list-item:nth-child(4) .front .front-img{
+	background-image: url(../img/index/list/list04.png) ;	
+}
+/*查看详情按钮*/
+#list div.list-item .front a{
+	display: block;
+	width: 130px;
+	height: 40px;
+	color: #fff;
+	background: rgba(250,15,137,0.5);
+	border-radius: 5px;
+	margin: auto;
+	text-align: center;
+	line-height: 40px;
+}
+/*后面*/
+#list div.list-item .front{
+	z-index: -1;
+}
+#list div.list-item .back{
+	transform: rotateY(-180deg);
+	z-index: -2;
+}
+/*后面内容区*/
+#list div.list-item .back .back-content{
+	width: 200px;
+	height: 280px;
+	margin:30px;
+	line-height: 24px;
+	color: #333;
+	font-size: 18px;
+}
+/*触发事件*/
+#list div.list-item:hover .front{
+	transform: rotateY(180deg);
+}
+#list div.list-item:hover .back{
+	transform: rotateY(0deg);
+}
+/*限时抢购*/
+#rob{
+	width: 100%;
+}
+#rob .rob-time{
+	float: left;
+	width: 203px;
+	height: 300px;
+	background-color: #FFD0DC;
+	color: #FF1493;
+	text-align: center;
+	padding: 0 18px;
+}
+#rob .rob-time h1{
+	font-size: 34px;
+	padding: 30px 0 10px;
+}
+#rob .rob-time p{
+	padding: 50px 0 10px;
+}
+/*计时牌*/
+#rob .rob-time b{
+	font-size: 25px;
+}
+#rob .rob-time ul{
+	color: #fff;
+	font-size: 30px;
+}
+#rob .rob-time ul li{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-color: #898989;	
+	line-height: 50px;
+	border-right: 1px solid #FFF5D4;
+	margin-bottom: 20px;
+}
+#rob .rob-time ul li:last-child{
+	border-right: none;
+}
+/*无缝滚动*/
+#rob .rob-roll{
+	float: right;
+	width: 900px;
+	height: 300px;
+	border: 1px solid #F10180;
+	position: relative;
+	overflow: hidden;
+}
+#rollList{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#rob .rob-roll ul li{
+	height: 100%;
+	float: left;
+}
+#rob .rob-roll img{
+	height: 300px;
+}
+/*精彩车图*/
+#won{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 1170px;
+	height: 300px;
+	margin: 10px 15px;
+	overflow: hidden;
+}
+/*查看更多提醒*/
+#won>a,#ful>a,#ful .ful-btn>a{
+	display: block;
+	width: 200px;
+	height: 25px;
+	margin: auto;
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+	background: #FF69B4;
+	border-radius: 3px;
+	opacity: 0.7;
+}
+/*图片*/
+#won ul{
+	height: 200px;
+	position: absolute;
+	left: 0px;top: 26px;
+	cursor: pointer;
+}
+#won ul li{
+	float: left;
+	width: 300px;
+	height: 200px;	
+}
+#won ul li>img{
+	width: 300px;
+	-webkit-box-reflect: below 1px -webkit-linear-gradient(top,rgba(0,0,0,0) 60%,rgba(0,0,0,.5) 100%);
+}
+/*精彩车图后续*/
+#wonBack{
+	height: 455px;
+}
+#ful{
+	float: left;
+}
+#ful>a{
+	margin: 5px 10px 15px 15px;
+	display: inline-block;
+}
+/*切换按钮*/
+#ful div.ful-btn{
+	display: inline-block;
+	margin-left: 80px;
+}
+#ful .ful-btn>a{
+	display: inline-block;
+	width: 50px;
+}
+/*切换图片*/
+#ful .ful-img{
+	width: 533px;
+	height: 400px;
+	background-image: url(../img/index/wonderful/ful03.jpg);/*初始背景图*/
+	margin: 0 15px;
+	border-radius: 3px;
+	box-shadow: 0 0 3px #f10180;
+}
+/*把大图分成四个小区*/
+#ful .ful-img li{
+	float: left;
+	width: 133px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+/*把每个小区放四个小分区堆叠在一起,用来切换背景图，一开始背景都是没有的，给谁添加谁就显示出来*/
+#ful .ful-img li div{
+	width: 133px;
+	height: 400px;
+	position: absolute;
+	left: 133px;/*都向右移动，为了后面运动*/
+	top: 0;
+}
+/*使每个小区块只显示图片固定位置,拼凑成一张*/
+.ful-img li:first-child div{
+	background-position: 0px 0px;
+}
+.ful-img li:nth-child(2) div{
+	background-position: 399px 0px;
+}
+.ful-img li:nth-child(3) div{
+	background-position: 266px 0px;
+}
+.ful-img li:last-child div{
+	background-position: 133px 0px;
+}
+/*精彩车图后续右*/
+#def{
+	float: right;
+	width: 605px;
+	height: 450px;
+}
+#defa{
+	float: left;
+	width: 22px;
+	height: 160px;
+	color: #fff;
+	background: #FF69B4;
+	text-align: center;
+	padding-top: 17px;
+	margin-top: 140px;
+	opacity: 0.7;
+	border-radius: 3px;
+}
+#def ul li{
+	float: left;
+	width: 300px;
+	height: 225px;
+	position: relative;
+}
+#def ul li a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 225px;
+	font-size: 22px;
+	color: #fff;
+	background: rgba(0,0,0,.4);
+	opacity: 0;
+}
+#def ul li img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all .5s ease;
+}
+#def ul li img.default{opacity: 1;}
+#def ul li:hover a{
+	opacity: 1;
+}
+#def ul li:hover img.left{
+	top: 0;
+	left: -302px;
+	opacity: 1;
+	z-index: 999;
+}
+#def ul li:hover img.right{
+	top: 0;
+	left: 302px;
+	opacity: 1;
+	z-index: 999;
+}
+#def ul li:hover img.top{
+	top: -227px;
+	left: 0px;
+	opacity: 1;
+	z-index: 999;
+}
+#def ul li:hover img.bottom{
+	top: 227px;
+	left: 0px;
+	opacity: 1;
+	z-index: 999;
+}
+/*大家一起说*/
+#etc>h3{
+	text-align: left;
+	text-indent: 20px;
+}
+#etc .see{
+	float: left;
+	width: 810px;
+	height: 410px;
+	border: 1px solid #D2DCF8;
+	margin: 0 15px;
+	box-shadow: 0 0 1px #FF69B4;
+	color: #333;
+	position: relative;
+}
+#etc .see ul li{
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px dotted #E4B9B9;
+}
+#etc .see ul li:hover .see-member img{
+	transform: rotate(360deg);
+}
+/*大家说头像*/
+.see-member{
+	float: left;
+	width: 80px;
+	height: 100px;
+	text-align: center;
+	margin-left: 10px;
+}
+.see-member img{
+	display: block;
+	margin: 20px 10px 5px 20px;
+	transition: all .8s ease;
+}
+.see-member h6{
+	color: #F43838;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+/*大家说内容*/
+.see-comment{
+	float: right;
+	width: 700px;
+	height: 80px;
+	border: 1px solid #E0ECFF;
+	margin: 10px auto;
+	border-right: 0;
+	position: relative;
+}
+.see-comment:before{
+	content: '';
+    position: absolute;
+    left: -22px;
+    top: 50%;
+    margin-top: -11px;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-right-color: #E0ECFF;
+	
+}
+.see-comment>p{
+	margin: 15px 20px;
+	line-height: 25px;
+}
+/*飘落点点效果*/
+.seeDiv{
+	width: 3px;
+	height: 3px;
+	position: absolute;
+	top: 0;
+}
+/*捐赠我*/
+#etc .seemy{
+	float: right;
+	margin-right: 30px;
+}
+#etc .seemy>a{
+	display: block;
+	width: 240px;
+	height: 50px;
+	background-color:#27CFC3;
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 15px;
+}
+#etc .seemy>a:hover{
+	box-shadow: 0 0 20px turquoise;
+}
+#etc .seemy>p{
+	border-top: 1px dotted #27CFC3;
+	width: 240px;
+	line-height: 24px;
+}
+/*这里等你*/
+#map .mapCon{
+	float: left;
+	width: 240px;
+	height: 375px;
+	padding: 20px 20px 0px;
+	border: 1px solid #F1A899;
+	margin-bottom: 15px;
+}
+#map .mapCon>p{
+	line-height: 50px;
+	text-indent: 40px;
+}
+#map .mapCon>p:hover{
+	color: red;
+}
+#map .mapCon>h4{
+	font-size: 26px;
+	color: #FF69B4;
+	padding-top: 20px;
+	text-align: center;
+}
+#myMap{
+	float: right;
+	width: 900px;
+	height: 400px;
+	margin-bottom: 15px;
+}
+/*合作伙伴*/
+#cool{
+	width: 100%;
+	height: 150px;
+	margin: 50px auto;
+}
+#cool img{
+	display: inline-block;
+	width: 145px;
+	height: 145px;
+	border-radius: 50%;
+	margin-left: -25px;
+	box-shadow: 0 0 10px #F10180;
+	transition: all .5s ease;
+}
+#cool img:first-child{
+	margin-left: 11px;
+}
+#cool img:hover{
+	transform: translate(20px,20px) scale(1.2);
+}
+/*结束线条*/
+#end{
+	width: 100%;
+	height: 1px;
+	background: #ccc;
+	margin: 20px auto;
+}
+/*楼梯导航*/
+#stairs{
+	width: 50px;
+	opacity: 0;
+	position: fixed;
+	left: 50%;
+	margin-left: -655px;
+	border: 1px solid #ccc;
+	background-color: #F0F0EE;
+	z-index: 999;
+	border-radius: 3px;
+}
+#stairs ul li{
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #ccc;
+	color: #666;
+	text-align: center;
+	line-height: 35px;
+	cursor: pointer;
+}
+#stairs ul li:last-child{
+	border-bottom: none;
+}
+#stairs ul li.staActive{
+	background-color: rgba(241,1,128,.6);
+	color: #F0F0EE;
+	box-shadow: 0 0 8px #F0AD4E;
+}
+/*悬浮窗口*/
+#window{
+	position: fixed;
+	top: 40%;
+	right: 50%;
+	z-index: 999;
+	margin-right: -660px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>精车汇用户注册</title>
+		<link rel="stylesheet" href="../../css/loginRegist/regist.css" />
+		<script src="../../js/basc.js"></script>
+		<script src="../../js/loginRegist/regist.js"></script>
+	</head>
+	<body>
+		<div id="regist">
+			<div class="regTitle">
+				<h2>欢迎新用户注册</h2>
+				<a href="login.html">直接登录</a>
+			</div>
+			<form>
+				<p>
+					<label for="uname">用户昵称：</label>
+					<input type="text" name="uname" id="uname" placeholder="请输入您的用户名"/>
+					<span id="uname_show"></span>
+				</p>	
+				<p>
+					<label for="upwd">用户密码：</label>	
+					<input type="password" name="upwd" id="upwd" placeholder="请输入您的密码"/>
+					<span id="upwd_show"></span>
+				</p>
+				<p>
+					<label for="rpwd">确认密码：</label>	
+					<input type="password" name="rpwd" id="rpwd" placeholder="请确认您的密码"/>
+					<span id="rpwd_show"></span>
+				</p>
+				<p>
+					<label for="phone">手机号码：</label>	
+					<input type="text" name="phone" id="phone" placeholder="请输入您的手机号"/>
+					<span id="phone_show"></span>
+				</p>
+				<p>
+					<input type="button" id="submit" value="免费注册" />
+				</p>
+			</form>
+		</div>
+		<!--提示框-->
+		<div id="msg"></div>
+	</body>
+</html>

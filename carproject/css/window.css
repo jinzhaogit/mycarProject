@@ -1,0 +1,68 @@
+#win{
+	position: fixed;
+	top: 46%;
+	right: 5px;
+	z-index: 999;
+	cursor: pointer;
+}
+/*主干*/ 
+#win>div.trunk{
+	width: 70px;
+	height: 70px;
+	background-color: rgba(240,141,169,.8);
+	color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 15px yellow;
+	font-size: 12px;
+	text-align: center;
+	line-height: 17px;	
+	animation: bran 5s linear infinite;
+}
+@-webkit-keyframes bran{
+	0%{box-shadow: 0 0 0px greenyellow;background-color: rgba(240,141,169,.8);}
+	80%{box-shadow: 0 0 30px yellow;background-color: rgba(0,0,0,.8);}
+	90%{box-shadow: 0 0 20px yellow;background-color: lightgreen;}
+	100%{box-shadow: 0 0 0px greenyellow;background-color: rgba(240,141,169,.9);}
+}
+/*分支1*/
+.branch1,.branch2,.branch3,.branch4{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(240,141,169,.8);
+	border-radius: 50%;
+	box-shadow: 0 0 10px yellow;
+	padding: 5px;
+	text-align: center;
+	transition: all .5s linear;
+	opacity: 0;
+}
+#win>div>a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 15px;
+}
+#win:hover div.branch1{
+	left: -50px;
+	top: -22px;
+	opacity: 1;
+}
+#win:hover div.branch2{
+	left: 16px;
+	top: 78px;
+	opacity: 1;
+}
+#win:hover div.branch3{
+	left: 0px;
+	top: -60px;
+	opacity: 1;
+}
+#win:hover div.branch4{
+	left: -44px;
+	top: 48px;
+	opacity: 1;
+}

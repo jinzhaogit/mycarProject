@@ -1,0 +1,41 @@
+/*css初始化*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:14px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+/*清除浮动*/
+.clearfix:before,.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*清除子元素外边距对父元素影响*/
+.table:before,.table:after{
+	content: '';
+	display: table;
+}
+/*标题样式*/
+h1.title{
+	color: #F10180;
+	border-bottom: 1px solid #EED3D7;
+	padding: 10px 0;
+}
+h1.title:before{
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 30px;
+	background: rgb(219,49,131);
+	margin: 3px 10px 0 15px;
+	vertical-align: bottom;
+	border-radius: 2px;
+}
+h3{
+	font-size: 20px;
+	color: #262626;
+	line-height: 50px;
+	text-align: center;
+}
